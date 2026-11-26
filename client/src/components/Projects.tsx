@@ -50,8 +50,8 @@ export function Projects() {
           <p className="section-label">01 — Projects</p>
           <h2>Selected projects</h2>
           <p className="section-desc">
-            A few things I&apos;ve built — from this site to full-stack apps.
-            More experiments live on GitHub.
+            A few things I&apos;ve built — from full-stack platforms to a mobile
+            party game. More experiments live on GitHub.
           </p>
         </div>
 

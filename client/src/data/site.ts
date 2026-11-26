@@ -4,10 +4,10 @@ export const site = {
   email: 'hello@example.com', // TODO: replace with your real email
 
   hero: {
-    eyebrow: 'Frontend developer',
+    eyebrow: 'Software developer',
     title: "Hi, I'm Sava.",
     highlight: 'I build for the web.',
-    lead: 'Frontend developer focused on clean interfaces, smooth interactions and solid TypeScript. I turn ideas into fast, accessible websites — from the first sketch to the final deploy.',
+    lead: 'Software developer focused on clean interfaces, smooth interactions and solid TypeScript. I turn ideas into fast, accessible web apps — from the first sketch to the final deploy.',
     stack: ['React', 'TypeScript', 'Node.js', 'Vite'],
   },
 

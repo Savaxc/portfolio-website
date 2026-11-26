@@ -56,8 +56,7 @@ development.
 
 - **Personal info & copy** — `client/src/data/site.ts` (name, email, GitHub,
   hero text, about text, toolbox).
-- **Projects** — `server/src/data/projects.ts`. The current list includes sample
-  entries (Taskflow, Weatherly) — replace them with your own projects.
+- **Projects** — `server/src/data/projects.ts` (Stock.app, MediSync AI, Charades).
 - **Colors & spacing** — CSS variables at the top of `client/src/index.css`.
 
 The email in `site.ts` (`hello@example.com`) is a placeholder — update it before
@@ -89,6 +88,6 @@ CLIENT_ORIGIN=http://localhost:5173
 
 ## Next steps
 
-- Replace the sample projects and placeholder email.
+- Replace the placeholder email and adjust the project list.
 - Add a contact form endpoint with validation and email delivery.
 - Add analytics and Open Graph metadata.

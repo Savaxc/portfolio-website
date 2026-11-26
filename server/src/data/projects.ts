@@ -9,25 +9,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: 'portfolio-website',
-    title: 'Portfolio Website',
+    slug: 'inventory-management-app',
+    title: 'Stock.app — Inventory Management',
     description:
-      'A one-page portfolio with a React frontend, a typed Express API and a dark, responsive design.',
-    tags: ['React', 'TypeScript', 'Node.js'],
-    repository: 'https://github.com/Savaxc/portfolio-website',
+      'Stock.app is a full-stack inventory platform with real-time tracking, low-stock email alerts, analytics, CSV import and PDF valuation reports.',
+    tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
+    repository: 'https://github.com/Savaxc/inventory-management-app',
   },
   {
-    slug: 'taskflow',
-    title: 'Taskflow',
+    slug: 'medisync',
+    title: 'MediSync AI',
     description:
-      'A Kanban board for planning personal projects, with drag-and-drop columns and local persistence.',
-    tags: ['React', 'TypeScript', 'Zustand'],
+      'A health SaaS that turns lab results into plain language with GPT-4o, trend charts and downloadable PDF reports.',
+    tags: ['React', 'TypeScript', 'OpenAI', 'Tailwind CSS'],
+    repository: 'https://github.com/Savaxc/MediSync',
   },
   {
-    slug: 'weatherly',
-    title: 'Weatherly',
+    slug: 'charades',
+    title: 'Charades',
     description:
-      'A minimal weather app with location search, hourly forecasts and a clean, focused interface.',
-    tags: ['React', 'Vite', 'REST API'],
+      'A React Native party game — pick categories, put the phone on your forehead and tilt to score. 342 terms across 7 categories.',
+    tags: ['React Native', 'Expo', 'TypeScript'],
+    repository: 'https://github.com/Savaxc/Charades',
   },
 ];
