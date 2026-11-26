@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Portfolio website built with React, Node.js and TypeScript",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"npm run dev -w @portfolio/server\" \"npm run dev -w @portfolio/client\"",
+    "dev:client": "npm run dev -w @portfolio/client",
+    "dev:server": "npm run dev -w @portfolio/server",
+    "build": "npm run build -w @portfolio/server && npm run build -w @portfolio/client",
+    "start": "npm run start -w @portfolio/server",
+    "typecheck": "npm run typecheck -w @portfolio/server && npm run typecheck -w @portfolio/client",
+    "lint": "npm run lint -w @portfolio/client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
