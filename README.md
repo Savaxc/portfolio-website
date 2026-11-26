@@ -1,14 +1,23 @@
 # Portfolio Website
 
-A full-stack portfolio site built with React, Node.js and TypeScript.
+A one-page portfolio site with a dark, responsive design — built with React,
+TypeScript, Vite and a small Express API.
+
+Live sections: **Home**, **Projects**, **About** and **Contact**, with smooth
+scrolling and active-section navigation.
 
 ## Structure
 
 ```
 portfolio-website/
-├── client/          # React + Vite + TypeScript frontend
-├── server/          # Express + TypeScript API
-├── package.json     # npm workspaces root
+├── client/                  # React + Vite + TypeScript frontend
+│   ├── src/components/      # Header, Hero, Projects, About, Contact, Footer
+│   ├── src/hooks/           # useActiveSection, useProjects
+│   ├── src/data/site.ts     # Edit your name, email, bio and toolbox here
+│   └── vite.config.ts       # /api proxy → localhost:3001
+├── server/                  # Express + TypeScript API
+│   └── src/data/projects.ts # Project list served by the API
+├── package.json             # npm workspaces root
 └── README.md
 ```
 
@@ -28,8 +37,8 @@ npm run dev
 - Frontend: http://localhost:5173
 - API: http://localhost:3001
 
-Vite proxies all `/api` requests from the client to the server, so the frontend
-can call `/api/...` without any CORS setup in development.
+Vite proxies all `/api` requests to the server, so no CORS setup is needed in
+development.
 
 ## Scripts
 
@@ -43,13 +52,24 @@ can call `/api/...` without any CORS setup in development.
 | `npm run typecheck`  | Type-check both workspaces               |
 | `npm run lint`       | Lint the client                          |
 
+## Customizing
+
+- **Personal info & copy** — `client/src/data/site.ts` (name, email, GitHub,
+  hero text, about text, toolbox).
+- **Projects** — `server/src/data/projects.ts`. The current list includes sample
+  entries (Taskflow, Weatherly) — replace them with your own projects.
+- **Colors & spacing** — CSS variables at the top of `client/src/index.css`.
+
+The email in `site.ts` (`hello@example.com`) is a placeholder — update it before
+publishing.
+
 ## API
 
-| Method | Endpoint             | Description        |
-| ------ | -------------------- | ------------------ |
-| GET    | `/api/health`        | Health check       |
-| GET    | `/api/projects`      | List all projects  |
-| GET    | `/api/projects/:slug`| Get one project    |
+| Method | Endpoint              | Description       |
+| ------ | --------------------- | ----------------- |
+| GET    | `/api/health`         | Health check      |
+| GET    | `/api/projects`       | List all projects |
+| GET    | `/api/projects/:slug` | Get one project   |
 
 ## Environment variables
 
@@ -60,9 +80,15 @@ PORT=3001
 CLIENT_ORIGIN=http://localhost:5173
 ```
 
+## Deployment notes
+
+- Build with `npm run build`.
+- Serve `client/dist` as a static site and run the API with `npm start`.
+- Point the frontend at the API origin (or keep `/api` behind the same reverse
+  proxy) and set `CLIENT_ORIGIN` on the server.
+
 ## Next steps
 
-- Add routing (React Router) and pages: home, projects, about, contact.
-- Move project data to a database or CMS.
-- Add a contact form endpoint and validation.
-- Set up deployment (e.g. static client on Vercel/Netlify, API on Railway/Fly.io).
+- Replace the sample projects and placeholder email.
+- Add a contact form endpoint with validation and email delivery.
+- Add analytics and Open Graph metadata.
