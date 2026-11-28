@@ -4,7 +4,8 @@ A one-page portfolio site with a dark, responsive design — built with React,
 TypeScript, Vite and a small Express API.
 
 Live sections: **Home**, **Projects**, **About** and **Contact**, with smooth
-scrolling and active-section navigation.
+scrolling and active-section navigation. A header button switches between the
+default dark theme and a light theme, and the choice is saved in `localStorage`.
 
 ## Structure
 
@@ -12,7 +13,7 @@ scrolling and active-section navigation.
 portfolio-website/
 ├── client/                  # React + Vite + TypeScript frontend
 │   ├── src/components/      # Header, Hero, Projects, About, Contact, Footer
-│   ├── src/hooks/           # useActiveSection, useProjects
+│   ├── src/hooks/           # useActiveSection, useProjects, useTheme
 │   ├── src/data/site.ts     # Edit your name, email, bio and toolbox here
 │   └── vite.config.ts       # /api proxy → localhost:3001
 ├── server/                  # Express + TypeScript API
@@ -58,6 +59,8 @@ development.
   hero text, about text, toolbox).
 - **Projects** — `server/src/data/projects.ts` (Stock.app, MediSync AI, Charades).
 - **Colors & spacing** — CSS variables at the top of `client/src/index.css`.
+  The default dark palette lives in `:root`; the light palette overrides those
+  tokens under `[data-theme='light']`.
 - **Fonts** — Space Grotesk (headings), Inter (body) and JetBrains Mono
   (labels/tags), self-hosted via Fontsource and imported in `client/src/main.tsx`.
 

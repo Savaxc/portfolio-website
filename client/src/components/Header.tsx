@@ -1,4 +1,5 @@
 import { site } from '../data/site'
+import { ThemeToggle } from './ThemeToggle'
 
 const navItems = [
   { id: 'home', label: 'Home' },
@@ -40,6 +41,8 @@ export function Header({ activeSection }: HeaderProps) {
         <a className="btn btn-ghost btn-sm header-cta" href="#contact">
           Let&apos;s talk
         </a>
+
+        <ThemeToggle />
       </div>
     </header>
   )

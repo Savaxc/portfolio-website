@@ -9,6 +9,16 @@
       content="Portfolio of Sava — a software developer building fast, accessible web apps with React, TypeScript and Node.js."
     />
     <meta name="theme-color" content="#09090b" />
+    <script>
+      ;(() => {
+        try {
+          document.documentElement.dataset.theme =
+            localStorage.getItem('theme') === 'light' ? 'light' : 'dark'
+        } catch {
+          document.documentElement.dataset.theme = 'dark'
+        }
+      })()
+    </script>
     <title>Sava — Software Developer</title>
   </head>
   <body>
