@@ -1,20 +1,21 @@
 :root {
-  --bg: #081f24;
-  --bg-soft: #0b2a2e;
-  --surface: #114b47;
-  --surface-strong: #12544f;
-  --surface-hover: #17665c;
-  --border: #235950;
-  --border-strong: #347a6a;
+  --bg: #09090b;
+  --bg-soft: #0f0f11;
+  --surface: #16161a;
+  --surface-strong: #1c1c21;
+  --surface-hover: #222228;
+  --border: #26262c;
+  --border-strong: #3a3a43;
 
-  --text: #d8e9db;
-  --text-muted: #a9c6b0;
-  --text-heading: #f3faf4;
+  --text: #d4d4d9;
+  --text-muted: #92929c;
+  --text-heading: #f4f4f6;
 
-  --accent: #8bbb92;
-  --accent-strong: #2a835f;
-  --accent-soft: rgba(139, 187, 146, 0.15);
-  --accent-glow: rgba(42, 131, 95, 0.5);
+  --accent: #ffd60a;
+  --accent-strong: #ffd60a;
+  --accent-hover: #ffe066;
+  --accent-soft: rgba(255, 214, 10, 0.12);
+  --accent-glow: rgba(255, 214, 10, 0.25);
 
   --header-height: 72px;
   --scroll-offset: 96px;
@@ -95,8 +96,8 @@ section[id] {
 }
 
 ::selection {
-  background: var(--accent-soft);
-  color: var(--text-heading);
+  background: var(--accent);
+  color: var(--bg);
 }
 
 :focus-visible {
