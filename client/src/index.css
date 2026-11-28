@@ -37,12 +37,13 @@
   --header-height: 72px;
   --scroll-offset: 96px;
 
+  /* Space Grotesk by Florian Karsten — https://fonts.google.com/specimen/Space+Grotesk */
   --sans: 'Space Grotesk Variable', system-ui, -apple-system, 'Segoe UI',
     Roboto, sans-serif;
   --heading: 'Space Grotesk Variable', system-ui, sans-serif;
-  --mono: 'JetBrains Mono Variable', ui-monospace, 'SF Mono', Consolas, monospace;
+  --label: 'Space Grotesk Variable', system-ui, sans-serif;
 
-  font: 16px/1.6 var(--sans);
+  font: 16px/1.65 var(--sans);
   color: var(--text);
   background: var(--bg);
   color-scheme: dark;

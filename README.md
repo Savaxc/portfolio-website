@@ -61,9 +61,8 @@ development.
 - **Colors & spacing** — CSS variables at the top of `client/src/index.css`.
   The default dark palette lives in `:root`; the light palette overrides those
   tokens under `[data-theme='light']`.
-- **Fonts** — Space Grotesk by Florian Karsten (headings and body) and
-  JetBrains Mono (labels/tags), self-hosted via Fontsource and imported in
-  `client/src/main.tsx`.
+- **Fonts** — Space Grotesk by Florian Karsten for all UI and body text,
+  self-hosted via Fontsource and imported in `client/src/main.tsx`.
 
 The email in `site.ts` (`hello@example.com`) is a placeholder — update it before
 publishing.
