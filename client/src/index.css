@@ -37,9 +37,9 @@
   --header-height: 72px;
   --scroll-offset: 96px;
 
-  --sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto,
-    sans-serif;
-  --heading: 'Space Grotesk Variable', 'Inter Variable', system-ui, sans-serif;
+  --sans: 'Space Grotesk Variable', system-ui, -apple-system, 'Segoe UI',
+    Roboto, sans-serif;
+  --heading: 'Space Grotesk Variable', system-ui, sans-serif;
   --mono: 'JetBrains Mono Variable', ui-monospace, 'SF Mono', Consolas, monospace;
 
   font: 16px/1.6 var(--sans);
