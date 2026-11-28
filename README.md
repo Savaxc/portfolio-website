@@ -58,6 +58,8 @@ development.
   hero text, about text, toolbox).
 - **Projects** — `server/src/data/projects.ts` (Stock.app, MediSync AI, Charades).
 - **Colors & spacing** — CSS variables at the top of `client/src/index.css`.
+- **Fonts** — Space Grotesk (headings), Inter (body) and JetBrains Mono
+  (labels/tags), self-hosted via Fontsource and imported in `client/src/main.tsx`.
 
 The email in `site.ts` (`hello@example.com`) is a placeholder — update it before
 publishing.

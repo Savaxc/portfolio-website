@@ -15,12 +15,12 @@
   background:
     radial-gradient(
       600px circle at 12% 0%,
-      rgba(124, 58, 237, 0.12),
+      rgba(18, 84, 79, 0.55),
       transparent 65%
     ),
     radial-gradient(
       700px circle at 88% 18%,
-      rgba(56, 189, 248, 0.05),
+      rgba(139, 187, 146, 0.07),
       transparent 65%
     );
 }
@@ -58,7 +58,7 @@ main,
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(23, 25, 31, 0.78);
+  background: rgba(8, 31, 36, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
@@ -72,6 +72,7 @@ main,
 }
 
 .logo {
+  font-family: var(--heading);
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -103,7 +104,7 @@ main,
 
 .nav-link:hover {
   color: var(--text-heading);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(139, 187, 146, 0.08);
 }
 
 .nav-link.is-active {
@@ -147,9 +148,10 @@ main,
 }
 
 .btn-primary:hover {
-  background: #8b5cf6;
+  background: var(--accent);
+  color: var(--bg);
   transform: translateY(-1px);
-  box-shadow: 0 14px 34px -14px var(--accent-glow);
+  box-shadow: 0 14px 34px -14px rgba(139, 187, 146, 0.45);
 }
 
 .btn-ghost {
@@ -181,8 +183,8 @@ main,
   z-index: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    linear-gradient(rgba(139, 187, 146, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 187, 146, 0.05) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: radial-gradient(ellipse 65% 60% at 32% 40%, #000 15%, transparent 75%);
   -webkit-mask-image: radial-gradient(
@@ -204,7 +206,7 @@ main,
   padding: 6px 13px;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(139, 187, 146, 0.06);
   font-family: var(--mono);
   font-size: 12px;
   letter-spacing: 0.02em;
@@ -231,7 +233,7 @@ main,
 }
 
 .gradient-text {
-  background: linear-gradient(100deg, #d6c8ff 0%, #a78bfa 45%, #7dd3fc 100%);
+  background: linear-gradient(100deg, #e6f2e8 0%, #8bbb92 48%, #2a835f 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -414,7 +416,7 @@ main,
 
 a.project-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(167, 139, 250, 0.45);
+  border-color: rgba(139, 187, 146, 0.5);
   box-shadow: 0 22px 44px -30px rgba(0, 0, 0, 0.9);
 }
 
@@ -448,9 +450,9 @@ a.project-card:hover {
 
 .tag {
   padding: 4px 10px;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(139, 187, 146, 0.2);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(139, 187, 146, 0.09);
   font-family: var(--mono);
   font-size: 11.5px;
   color: var(--text-muted);
@@ -532,9 +534,9 @@ a.project-card:hover .project-cta span {
   border-radius: 6px;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.04) 25%,
-    rgba(255, 255, 255, 0.08) 37%,
-    rgba(255, 255, 255, 0.04) 63%
+    rgba(139, 187, 146, 0.05) 25%,
+    rgba(139, 187, 146, 0.11) 37%,
+    rgba(139, 187, 146, 0.05) 63%
   );
   background-size: 400% 100%;
   animation: shimmer 1.4s ease infinite;
@@ -614,7 +616,12 @@ a.project-card:hover .project-cta span {
   padding: 28px;
   border: 1px solid var(--border);
   border-radius: 16px;
-  background: linear-gradient(165deg, var(--surface) 0%, var(--bg) 100%);
+  background: linear-gradient(
+    165deg,
+    var(--surface-strong) 0%,
+    var(--surface) 55%,
+    var(--bg) 100%
+  );
 }
 
 .toolbox h3 {
@@ -648,7 +655,7 @@ a.project-card:hover .project-cta span {
   padding: 5px 11px;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(139, 187, 146, 0.05);
   font-family: var(--mono);
   font-size: 12px;
   color: var(--text);
@@ -660,7 +667,7 @@ a.project-card:hover .project-cta span {
   background:
     radial-gradient(
       700px circle at 50% -10%,
-      rgba(124, 58, 237, 0.14),
+      rgba(42, 131, 95, 0.22),
       transparent 65%
     ),
     var(--bg-soft);
@@ -678,6 +685,7 @@ a.project-card:hover .project-cta span {
 
 .contact h2 {
   font-size: clamp(2rem, 5vw, 3rem);
+  text-wrap: balance;
 }
 
 .contact-lead {
@@ -748,7 +756,7 @@ a.project-card:hover .project-cta span {
   .header-inner {
     flex-wrap: wrap;
     height: auto;
-    padding: 12px 0 10px;
+    padding-block: 12px 10px;
   }
 
   .logo {
@@ -775,7 +783,7 @@ a.project-card:hover .project-cta span {
   }
 
   .hero h1 {
-    font-size: clamp(2.4rem, 11vw, 3.4rem);
+    font-size: clamp(2rem, 10.3vw, 3.2rem);
   }
 
   .hero-lead {

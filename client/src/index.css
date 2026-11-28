@@ -1,25 +1,28 @@
 :root {
-  --bg: #17191f;
-  --bg-soft: #1b1e25;
-  --surface: #20232b;
-  --surface-hover: #252932;
-  --border: #2b2f39;
-  --border-strong: #3a3f4c;
+  --bg: #081f24;
+  --bg-soft: #0b2a2e;
+  --surface: #114b47;
+  --surface-strong: #12544f;
+  --surface-hover: #17665c;
+  --border: #235950;
+  --border-strong: #347a6a;
 
-  --text: #b3b8c4;
-  --text-muted: #858b99;
-  --text-heading: #f1f2f5;
+  --text: #d8e9db;
+  --text-muted: #a9c6b0;
+  --text-heading: #f3faf4;
 
-  --accent: #a78bfa;
-  --accent-strong: #7c3aed;
-  --accent-soft: rgba(167, 139, 250, 0.12);
-  --accent-glow: rgba(124, 58, 237, 0.35);
+  --accent: #8bbb92;
+  --accent-strong: #2a835f;
+  --accent-soft: rgba(139, 187, 146, 0.15);
+  --accent-glow: rgba(42, 131, 95, 0.5);
 
   --header-height: 72px;
   --scroll-offset: 96px;
 
-  --sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace;
+  --sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto,
+    sans-serif;
+  --heading: 'Space Grotesk Variable', 'Inter Variable', system-ui, sans-serif;
+  --mono: 'JetBrains Mono Variable', ui-monospace, 'SF Mono', Consolas, monospace;
 
   font: 16px/1.6 var(--sans);
   color: var(--text);
@@ -53,6 +56,13 @@ h3,
 h4,
 p {
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading);
 }
 
 ul {
